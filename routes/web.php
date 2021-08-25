@@ -17,10 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('/index','App\Http\Controllers\c_index@index');
-route::get('/tambah','App\Http\Controllers\c_index@tambah');
-route::post('/tambah_data','App\Http\Controllers\c_index@tambah_data');
-route::get('/hapus/{id}','App\Http\Controllers\c_index@hapus_data');
-route::get('/ubah/{id}','App\Http\Controllers\c_index@ubah');
-route::post('/ubah_data','App\Http\Controllers\c_index@ubah_data');
-route::get('/cari','App\Http\Controllers\c_index@cari');
+route::reosurce('/index','c_index2');
