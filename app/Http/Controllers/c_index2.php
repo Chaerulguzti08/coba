@@ -44,7 +44,7 @@ class c_index2 extends Controller
             'alamat' => $request -> f_alamat,
             'telepon' => $request -> f_telepon,
         ]);
-        return redirect('/index2');
+        return redirect('/index');
     }
 
     /**

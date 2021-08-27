@@ -32,12 +32,12 @@
             <td>{{ $a->umur }}</td>
             <td>{{ $a->telepon }}</td>
     
-            <td><a href="/hapus/{{$a->id}}">Hapus</a></td>
-            <td><a href="/ubah/{{$a->id}}">Update</a></td>
+            <td><a href="/delete/{{$a->id}}">Hapus</a></td>
+            <td><a href="/update/{{$a->id}}">Update</a></td>
         </tr>
         @endforeach
 
-        <a href="tambah">Tambah Data</a>
+        <a href="{{ route('index.create') }}">Tambah Data</a>
     </table>
 </body>
 </html>

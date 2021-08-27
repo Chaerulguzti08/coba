@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::reosurce('/index','c_index2');
+route::resource('/index','App\Http\Controllers\c_index2');
+route::get('/update/{id}','App\Http\Controllers\c_index2@edit');
+Route::post('/update_data','App\Http\Controllers\c_index2@update');
+Route::get('/delete/{id}','App\Http\Controllers\c_index2@destroy');

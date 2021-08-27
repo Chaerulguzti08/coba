@@ -8,7 +8,7 @@
 </head>
 <body>
 @foreach($ambil as $p)
-<form method="post" action="/ubah_data">
+<form method="post" action="update_data">
     {{ csrf_field() }}
     <input type="hidden" value="{{$p->id}}">
     <input type="text" value="{{$p->nama}}">

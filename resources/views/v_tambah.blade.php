@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="tambah_data">
+    <form method="post" action="{{route('index.store')}}">
     {{ csrf_field() }}
     
         <input type="text" name="f_nama" placeholder="nama" require>
